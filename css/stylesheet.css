@@ -1,0 +1,36 @@
+body{
+  background-image:url(../img/bg.jpg);
+  background-size:cover;
+  background-position:top left;
+  height:100vh;
+  padding:25px;
+}
+.container{
+  background-color:rgba(255,255,255,0.85);
+}
+
+hr{
+  border-color:#AAA;
+}
+.generator{
+  line-height:50px;
+}
+.generator .form-control{
+  display:inline-block;
+  text-align:center;
+  font-weight:300;
+  background-color:#FAFAFA;
+}
+.generator input{
+  width:150px;
+}
+.generator select{
+  width:200px;
+}
+
+.output{
+  font-size:18px;
+  font-weight:300;
+  padding:20px 50px;
+  border:1px solid #AAA;
+}

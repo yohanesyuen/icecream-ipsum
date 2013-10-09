@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ice Cream Ipsum</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="The cool, tasty Lorum Ipsum generator.">
+    <meta name="author" content="Joey Foo">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel=stylesheet>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 content">
+          <h1>Ice Cream Ipsum</h1>
+          <p class="lead">A cooler, tastier Lorum Ipsum generator. Best consumed in warm weather. </p>
+          <hr>
+          <form onsubmit="generateText(this.paragraphs.value, this.sentences.value, this.type.value); return false;">
+            <p class="lead generator">
+              Generate
+              <input type="text" class="form-control input-lg" value="3" id="paragraphs" placeholder="paragraphs">
+              paragraphs, each containing
+              <input type="text" class="form-control input-lg" value="5" id="sentences" placeholder="sentences">
+              sentences. 
+              I prefer
+              <select class="form-control input-lg" id="type">
+                <option value="0">everything!</option>
+                <option value="1">just flavours</option>
+              </select>
+              . 
+              </p>
+            <p>
+              <button type="submit" class="btn btn-default btn-block">Generate!</button>
+            </p>
+          </form>
+          <div id="output" class="">
+            <p></p>
+          </div>
+          
+          <hr>
+          <p>A put-it-together-in-12-hours thing by <a href="http://joeyfoo.github.io">Joey Foo</a>. Available on Github.</p>
+          <p>Inspired by <i>a cone of ice cream</i> and <a href="http://baconipsum.com/">Bacon Ipsum</a>. 
+          Background image <a href="http://www.flickr.com/photos/epanastasi/4214791805/" target="_blank">by Frank S</a>. </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/icecreamipsum.js"></script>
+  </body>
+</html>
