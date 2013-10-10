@@ -38,13 +38,13 @@ function formSentence(typeOfWords)
     console.log(typeOfWords + " / " + getWord);
     sentence += getWord;
     
-    if(randomNumber(0, 7) == 0)
-    {
-      sentence += ","
-    }
     
     if(i != x-1)
     {
+      if(randomNumber(0, 7) == 0)
+      {
+        sentence += ","
+      }
       sentence += " ";
     }
   }
